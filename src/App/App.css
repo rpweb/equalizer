@@ -1,0 +1,8 @@
+header {
+  text-align: center;
+  position: relative;
+}
+header .logo {
+  width: 90px;
+  margin-top: 25px;
+}

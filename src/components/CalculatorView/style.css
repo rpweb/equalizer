@@ -1,0 +1,152 @@
+.calculator-wrapper {
+  position: relative;
+  text-align: center;
+}
+
+.calculator-toggle {
+  display: inline-block;
+  margin-bottom: 25px;
+  width: 88px;
+}
+
+.calculator-view {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.calculator-view .formulas {
+  z-index: -1;
+}
+
+@media only screen and (min-width: 600px) {
+  .calculator-view {
+    flex-direction: row;
+  }
+
+  .calculator-view .formulas {
+    position: absolute;
+    left: 400px;
+  }
+
+  .calculator-view.Academic .formulas {
+    left: 500px;
+  }
+
+  .calculator-view .formulas ul li:first-child {
+    margin: 13px 0 22px 10px;
+  }
+}
+
+.calculator-view .formulas ul {
+  margin: 13px 0 0 0;
+  width: 300px;
+}
+
+.calculator-view .formulas ul li {
+  margin-left: 10px;
+}
+
+.calculator-view .calculator {
+  min-width: 300px;
+  max-width: 400px;
+  width: 100%;
+  background-color: #bbb;
+  border-radius: 3px;
+  overflow: hidden;
+  border-top: 1px solid #cbd6e2;
+  border-left: 1px solid #cbd6e2;
+}
+
+.calculator-view.Academic .calculator {
+  max-width: 500px;
+}
+
+.calculator-view .calculator input {
+  font-size: 2em;
+  width: 75%;
+  background-color: #f5f8fa;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 9px 10px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 22px;
+  color: #33475b;
+  border: 1px solid #cbd6e2;
+  box-sizing: border-box;
+  border-radius: 3px 0 0 0;
+  text-align: right;
+}
+
+.calculator-view.Academic .calculator input {
+  width: 80%;
+}
+
+.calculator-view .calculator input:focus {
+  outline: none;
+  border-color: rgba(82, 168, 236, 0.8);
+}
+
+.calculator-view .calculator input.error {
+  border-color: #c87872;
+}
+
+.calculator-view .calculator .button-wrapper {
+  display: inline-flex;
+  width: 25%;
+  height: 40px;
+  border-bottom: 1px solid #cbd6e2;
+  border-right: 1px solid #cbd6e2;
+  box-sizing: border-box;
+}
+
+.calculator-view.Academic .calculator .button-wrapper {
+  width: 20%;
+}
+
+.calculator-wrapper button {
+  background: #1795d4;
+  color: #ffffff;
+  font-size: 1em;
+  line-height: 35px;
+  border: 0;
+  width: 100%;
+  cursor: pointer;
+}
+
+.calculator-wrapper button:focus {
+  outline: none;
+  border: 0;
+}
+
+.calculator-wrapper button:active {
+  background: rgba(82, 168, 236, 0.8);
+}
+
+.calculator-wrapper .calculator-toggle button {
+  line-height: 25px;
+}
+
+.calculator-view .button-wrapper button img {
+  margin-bottom: -4px;
+}
+
+.calculator-view .button-wrapper.Academic button {
+  background: #33475b;
+  color: #ffffff;
+}
+
+.calculator-view .button-wrapper.operation button {
+  background: #fed800;
+  color: #33475b;
+}
+
+.calculator-view .calculator .button-wrapper.double {
+  width: 50%;
+}
+
+.calculator-view.Academic .calculator .button-wrapper.double {
+  width: 40%;
+}
