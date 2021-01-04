@@ -1,4 +1,4 @@
-# Equalizer - simple calculator based on react
+# Equalizer - standard or academic calculator based on react
 
 ### version 72cf4fe47f85c39779267d0ecee07655a354e623
 
