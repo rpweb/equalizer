@@ -1,4 +1,5 @@
 import { render, screen, fireEvent } from '@testing-library/react';
+import renderer from 'react-test-renderer';
 import App from './App';
 
 function abTest(symbol, result) {
@@ -50,6 +51,11 @@ function inputTest(value, result) {
   expect(screen.getByText(result)).toBeInTheDocument();
   fireEvent.click(screen.getByText('C'));
 }
+
+it('snapshot app test', () => {
+  const app = renderer.create(<App />).toJSON();
+  expect(app).toMatchSnapshot();
+});
 
 test('a b calculations', () => {
   render(<App />);
