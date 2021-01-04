@@ -1,22 +1,22 @@
 import { useState, useRef } from 'react';
 import { Calculation } from './calculation';
-import { STANDDARD, ACADEMIC } from './config';
+import { STANDARD, ACADEMIC } from './config';
 const calculation = new Calculation();
 
 export function useManageCalculator() {
   const inputRef = useRef(null);
-  const [calculator, setCalculator] = useState(STANDDARD);
+  const [calculator, setCalculator] = useState(STANDARD);
   const [error, setError] = useState();
   const [formulas, setFormulas] = useState([]);
   const [formula, setFormula] = useState('');
 
   const getNextCalculator = () => {
     switch (calculator) {
-      case STANDDARD: {
+      case STANDARD: {
         return ACADEMIC;
       }
       default: {
-        return STANDDARD;
+        return STANDARD;
       }
     }
   };

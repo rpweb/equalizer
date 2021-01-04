@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 
-export const STANDDARD = 'Standard';
+export const STANDARD = 'Standard';
 export const ACADEMIC = 'Academic';
 
 export const buttonKeys = [
@@ -32,7 +32,7 @@ export const buttonKeys = [
   },
   {
     symbol: '=',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     label: <img width={20} src={logo} name={'='} alt={'='} />,
     className: 'operation',
   },
@@ -52,20 +52,20 @@ export const buttonKeys = [
   },
   {
     symbol: '(',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     func: (...a) => a[a.length - 1],
     notation: 'prefix',
   },
-  { symbol: 'C', show: [ACADEMIC, STANDDARD] },
+  { symbol: 'C', show: [ACADEMIC, STANDARD] },
   {
     symbol: ')',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     func: () => null,
     notation: 'postfix',
   },
   {
     symbol: '/',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     label: '÷',
     className: 'operation',
     func: (a, b) => a / b,
@@ -81,13 +81,13 @@ export const buttonKeys = [
     precedence: 5,
     rightToLeft: true,
   },
-  { symbol: '7', show: [ACADEMIC, STANDDARD] },
-  { symbol: '8', show: [ACADEMIC, STANDDARD] },
-  { symbol: '9', show: [ACADEMIC, STANDDARD] },
+  { symbol: '7', show: [ACADEMIC, STANDARD] },
+  { symbol: '8', show: [ACADEMIC, STANDARD] },
+  { symbol: '9', show: [ACADEMIC, STANDARD] },
   {
     symbol: '*',
     label: 'x',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     className: 'operation',
     func: (a, b) => a * b,
     notation: 'infix',
@@ -99,12 +99,12 @@ export const buttonKeys = [
     className: 'Academic',
     func: Math.sqrt,
   },
-  { symbol: '4', show: [ACADEMIC, STANDDARD] },
-  { symbol: '5', show: [ACADEMIC, STANDDARD] },
-  { symbol: '6', show: [ACADEMIC, STANDDARD] },
+  { symbol: '4', show: [ACADEMIC, STANDARD] },
+  { symbol: '5', show: [ACADEMIC, STANDARD] },
+  { symbol: '6', show: [ACADEMIC, STANDARD] },
   {
     symbol: '-',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     className: 'operation',
     func: (a, b) => a - b,
     notation: 'infix',
@@ -116,12 +116,12 @@ export const buttonKeys = [
     className: 'Academic',
     func: Math.sin,
   },
-  { symbol: '1', show: [ACADEMIC, STANDDARD] },
-  { symbol: '2', show: [ACADEMIC, STANDDARD] },
-  { symbol: '3', show: [ACADEMIC, STANDDARD] },
+  { symbol: '1', show: [ACADEMIC, STANDARD] },
+  { symbol: '2', show: [ACADEMIC, STANDARD] },
+  { symbol: '3', show: [ACADEMIC, STANDARD] },
   {
     symbol: '+',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     className: 'operation',
     func: (a, b) => a + b,
     notation: 'infix',
@@ -135,13 +135,13 @@ export const buttonKeys = [
   },
   {
     symbol: '0',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     className: 'double',
   },
-  { symbol: '.', show: [ACADEMIC, STANDDARD] },
+  { symbol: '.', show: [ACADEMIC, STANDARD] },
   {
     symbol: '%',
-    show: [ACADEMIC, STANDDARD],
+    show: [ACADEMIC, STANDARD],
     className: 'operation',
     func: (a) => a / 100,
     notation: 'postfix',
